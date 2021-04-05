@@ -1,0 +1,14 @@
+def str_manipulate(old_str):
+    str_list = list(old_str)
+    l = len(str_list)
+    str_new = ""
+
+    for i in range(0, l):
+        if i % 2 == 0:
+            str_new += str_list[i].upper()
+        else:
+            str_new += str_list[i].lower()
+    return str_new
+
+
+print(str_manipulate("aBracadabra and abra"))
